@@ -1,10 +1,11 @@
-sudo vim /usr/share/X11/xorg.conf.d/40-libinput.conf
+1. `sudo vim /usr/share/X11/xorg.conf.d/40-libinput.conf`
 
 
 
 
 
-### Add `Option "ClickMethod" "clickfinger"` to the inputclass of "touchpad"
+2. *** Add `Option "ClickMethod" "clickfinger"` to the inputclass of "touchpad" ***
+```
 Section "InputClass"
         Identifier "libinput touchpad catchall"
         MatchIsTouchpad "on"
@@ -12,6 +13,6 @@ Section "InputClass"
         Option "ClickMethod" "clickfinger"
         Driver "libinput"
 EndSection
+```
 
-
-sudo service lightdm restart 
+3. `sudo service lightdm restart`
