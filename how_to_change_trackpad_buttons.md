@@ -4,7 +4,7 @@
 
 
 
-2. *** Add `Option "ClickMethod" "clickfinger"` to the inputclass of "touchpad" ***
+2. ***Add `Option "ClickMethod" "clickfinger"` to the inputclass of "touchpad"***
 ```
 Section "InputClass"
         Identifier "libinput touchpad catchall"
